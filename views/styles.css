@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    font-size: 22px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #18aba6;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #70ffee;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #18aba6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 171, 166, 0.5);
+}
+
+form button {
+    background-color: #e853ed;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #e615ed;
+}
+
+/* List Styles */
+#employee-list,
+#department-list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.employee-item,
+.department-item {
+    border: 1px solid #74aba9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.employee-item:hover,
+.department-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    gap: 10px;
+    /* Space between buttons */
+    width: 100%;
+    /* Ensure buttons are within the item width */
+    margin-top: 10px;
+}
+
+.button-group button {
+    background-color: #E853ED;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button-group button:hover {
+    background-color: #E615ED;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Specific Elements */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23343a40"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+}
+
+select::-ms-expand {
+    display: none;
+    /* Hide the default IE arrow */
+}
+
+/* Add some spacing to the bottom of the select box */
+select {
+    margin-bottom: 15px;
+}

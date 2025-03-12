@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollonia Dental Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Employee Management</h1>
+    <div id="employee-list"></div>
+
+    <h2>Add New Employee</h2>
+    <form id="add-employee-form">
+        <input type="text" id="firstName" placeholder="First Name" required><br>
+        <input type="text" id="lastName" placeholder="Last Name" required><br>
+        <input type="date" id="birthDate" placeholder="Birth Date"><br>
+        <input type="text" id="position" placeholder="Position"><br>
+        <select id="department"></select><br>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <h2>Departments</h2>
+    <div id="department-list"></div>
+
+    <h2>Add New Department</h2>
+    <form id="add-department-form">
+        <input type="text" id="departmentName" placeholder="Department Name" required><br>
+        <input type="text" id="departmentDescription" placeholder="Description"><br>
+        <button type="submit">Add Department</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
